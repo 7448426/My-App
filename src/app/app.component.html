@@ -1,10 +1,3 @@
  <h1> To Do List</h1>
  <input type="text"  placeholder=" Enter Task To Add" #task>
  <br> <br>
- <button (click)="addTask(task.value)">Add Task</button>
- 
- <ul *ngFor=" let item of list">
-    <li>
-{{item.name}} <button (click)="removeTask(item.id)">Remove Task</button>
-    </li>
- </ul>
